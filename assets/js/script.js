@@ -58,4 +58,10 @@ $(document).ready(function() {
             $(".menu").removeClass("menu-active");
         }
     });
+
+    $(".page_container2").click(function(){
+        if($(".menu").hasClass("menu-active")) {
+            $(".menu").removeClass("menu-active");
+        }
+    });
 });    
