@@ -8,6 +8,6 @@ In my jQuery, I made it so that the page doesn't fade into view until all images
 
 I tucked away navigation into a menu icon. Also put quiet little < > arrows to tell the user to click left and right or the left and right arrow keys. For style, I placed my logo at the bottom of the page in image galleries. 
 
-I wanted to vectorize my logo, but couldn't figure out how to do it in Photoshop.
+I vectorized my logo as well.
 
 I web-optimized all my photos, which greatly sped up load times.
