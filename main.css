@@ -187,25 +187,25 @@ nav li {
 }
 
 .slideshow li:nth-child(1) span {
-  background-image: url(images/bw1_d.jpg);
+  background-image: url(images/bg6_o.JPG);
 }
 
 .slideshow li:nth-child(2) span {
-  background-image: url(images/bw2_o.jpg);
+  background-image: url(images/bg7_o.JPG);
   -webkit-animation-delay: 4s;
   -moz-animation-delay: 4s;
   animation-delay: 4s;
 }
 
 .slideshow li:nth-child(3) span {
-  background-image: url(images/bg1_o.jpg);
+  background-image: url(images/bg9_o.jpg);
   -webkit-animation-delay: 8s;
   -moz-animation-delay: 8s;
   animation-delay: 8s;
 }
 
 .slideshow li:nth-child(4) span {
-  background-image: url(images/bg2_o.jpg);
+  background-image: url(images/bw1_d.jpg);
   -webkit-animation-delay: 12s;
   -moz-animation-delay: 12s;
   animation-delay: 12s;
