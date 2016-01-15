@@ -311,7 +311,7 @@ nav li {
     }
     #logo {
         width: 280px;
-        top: calc(50% - 120px);
+        top: calc(50% - 200px);
         right: calc(50% - 140px);
     }
 }
@@ -322,6 +322,10 @@ nav li {
     }
     header, .sticky_nav {
         display: none;
+    }
+    #logo {
+        width: 280px;
+        top: calc(50% - 120px);
     }
 }
 
