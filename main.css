@@ -101,14 +101,16 @@ header {
 
 .sticky_nav {
     position: relative;
-    background-color: black;
+    background-color: none;
     margin-top: -100px;
     z-index: 9999;
     
 /*    background: rgba(0,0,0,0.7);*/
+/*
     -webkit-box-shadow: 0px 0px 47px 3px rgba(0,0,0,0.65);
     -moz-box-shadow: 0px 0px 47px 3px rgba(0,0,0,0.65);
     box-shadow: 0px 0px 47px 3px rgba(0,0,0,0.65);
+*/
 }
 
 .sticky_nav_scrolled {
