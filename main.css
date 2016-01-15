@@ -333,7 +333,14 @@ nav li {
 }
 
 @media only screen and (max-width: 480px) {
-    a {
-        
+    #mobile_nav {
+        display: inline;
+    }
+    header, .sticky_nav {
+        display: none;
+    }
+    #logo {
+        width: 280px;
+        top: calc(50% - 120px);
     }
 }
