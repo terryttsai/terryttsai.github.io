@@ -187,11 +187,11 @@ nav li {
 }
 
 .slideshow li:nth-child(1) span {
-  background-image: url(images/bg6_o.JPG);
+  background-image: url(images/bg6_o.jpg);
 }
 
 .slideshow li:nth-child(2) span {
-  background-image: url(images/bg7_o.JPG);
+  background-image: url(images/bg7_o.jpg);
   -webkit-animation-delay: 4s;
   -moz-animation-delay: 4s;
   animation-delay: 4s;
