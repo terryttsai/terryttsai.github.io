@@ -12,16 +12,46 @@ body {
     margin: 0;
 }
 
+html,body {
+    height:100%;
+}
+
+
 #logo {
     width: 360px;
     position: absolute;
-    top: calc(50% - 190px);
+    top: calc(50% - 240px);
     right: calc(50% - 180px);
     z-index: 3;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    min-height: 640px;
+}
+
+#about {
+    background-color: coral;
+}
+
+#projects {
+    background-color: bisque;
+}
+
+#photos {
+    background-color: darksalmon;
+}
+
+#contact {
+    background-color: darkseagreen;
 }
 
 .darker {
@@ -48,14 +78,61 @@ a:hover {
     z-index: 3;
 }
 
-header {
+header, .sticky_nav {
+/*
+    position: fixed;
+    background-color: black;
+*/
+    width: 100%;
     z-index: 3;
     text-align: center;
     letter-spacing: 4px;
-    padding: 20px;
-    margin: 22px;
+    padding-top: 40px;
+    padding-bottom: 41px;
+    margin: 0px;
     font-size: 16px;
     color: white;
+    
+}
+
+header {
+    display: none;
+}
+
+.sticky_nav {
+    position: relative;
+    background-color: black;
+    margin-top: -100px;
+    z-index: 9999;
+    
+/*    background: rgba(0,0,0,0.7);*/
+    -webkit-box-shadow: 0px 0px 47px 3px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 0px 47px 3px rgba(0,0,0,0.65);
+    box-shadow: 0px 0px 47px 3px rgba(0,0,0,0.65);
+}
+
+.sticky_nav_scrolled {
+    width: 100%;
+    z-index: 3;
+    text-align: center;
+    letter-spacing: 4px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    margin-top: -100px;
+    z-index: 9999;
+    
+/*    background: rgba(0,0,0,0.7);*/
+    -webkit-box-shadow: 0px 0px 47px 3px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 0px 47px 3px rgba(0,0,0,0.65);
+    box-shadow: 0px 0px 47px 3px rgba(0,0,0,0.65);
+    
+    position: fixed;
+    margin-top: 0px;
+    top: 0;
 }
 
 nav {
@@ -76,10 +153,14 @@ nav li {
 
 .slideshow {
   list-style: none;
+  position: absolute;
   min-height: 640px;
+  width: 100%;
+  height: 100%;
   top: 0px;
   left: 0px;
   margin: 0;
+  padding: 0;
   z-index: 1;
 }
 .slideshow li span {
@@ -91,7 +172,7 @@ nav li {
   left: 0px;
   color: transparent;
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 50% 7%;
   background-repeat: none;
   opacity: 0;
   z-index: 0;
@@ -192,9 +273,60 @@ nav li {
   opacity: 1;
 }
 
+#mobile_nav {
+    display:none;
+    position: fixed;
+    top: 0px;
+    height: 74px;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0px 0px 47px 3px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 0px 47px 3px rgba(0,0,0,0.65);
+    box-shadow: 0px 0px 47px 3px rgba(0,0,0,0.65);
+    z-index: 5;
+}
+
+#mobile_nav h1 {
+/*
+    font-family: 'Times New Roman';
+    font-style: italic;
+*/
+    color: white;
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+#mobile_nav_button {
+    position: fixed;
+    margin: 0;
+    top: 0px;
+    right: 16px;
+    
+}
+
+@media screen and (max-width: 800px) {
+    header, .sticky_nav {
+        font-size: 12px;
+    }
+    #logo {
+        width: 280px;
+        top: calc(50% - 120px);
+        right: calc(50% - 140px);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #mobile_nav {
+        display: inline;
+    }
+    header, .sticky_nav {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 480px) {
-    #logo {
-        display: none;
+    a {
+        
     }
 }
