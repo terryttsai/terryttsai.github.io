@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TERRYTSAI</title>
+        <link rel="stylesheet" href="rainydays.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Special+Elite|Inconsolata:400,700|Libre+Baskerville:400,400italic|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
+        <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+    <script>
+    $(document).ready(function() {
+        window.onload = function() {
+            $('body').fadeIn(1200);
+        }
+        $('.wrapper > :gt(0)').hide();
+        $("img").click(function(event) {
+            $('.wrapper > :first-child').hide()
+                .next('.pic_container').fadeIn(1200)
+                .end().appendTo('.wrapper');
+        });
+        event.preventDefault();
+    });    
+    </script>
+    </head>
+    <body>
+        <div class="wrapper" id="page0">
+            <div class="pic_container">
+                <img class="pic" src="pics/film6.JPG">
+                <div class="text" id="text1">
+                    RAINY DAYS
+                </div>
+            </div>
+            <div class="pic_container">
+                <img class="pic" src="pics/film2.jpg">
+                <div class="text" id="text1">
+                    A man told me in a dream,
+                </div>
+            </div>
+            <div class="pic_container">
+                <img class="pic" src="pics/film1.jpg">
+                <div class="text" id="text1">
+                    That if I don't chase after my dreams now,
+                </div>
+            </div>
+            <div class="pic_container">
+                <img class="pic" src="pics/film7.JPG">
+                <div class="text" id="text3">
+                    That if I don't start running before the sun sets,
+                </div>
+            </div>
+            <div class="pic_container">
+                <img class="pic" src="pics/film3.jpg">
+                <div class="text" id="text1">
+                    I will regret it for the rest of my days.
+                </div>
+            </div>
+            <div class="pic_container">
+                <img class="pic" src="pics/film5.jpg">
+                <div class="text" id="text1">
+                    I will forever be lost in this beautiful world.
+                </div>
+            </div>
+            <div class="pic_container">
+                <img class="pic" src="pics/film8.jpg">
+                <div class="text" id="text1">
+                    Having no place to call home.
+                </div>
+            </div>
+            <div class="pic_container">
+                <img class="pic" src="pics/vsco1.jpg">
+                <div class="text" id="text1">
+                    Wandering aimlessly, wondering when I'll run out of time or strength.
+                </div>
+            </div>
+            <div class="pic_container">
+                <img class="pic" src="pics/c3.jpg">
+                <div class="text" id="text2">
+                    What do you see in me?<br><br>
+                    That makes you stay, when I tell you to go?
+                </div>
+            </div>
+            <div class="pic_container">
+                <img class="pic" src="pics/c2.jpg">
+                <div class="text" id="text2">
+                    Do you see a future in us?<br><br>
+                    When every voice is telling us no?
+                </div>
+            </div>
+            <div class="pic_container">
+                <div class="text title" id="text3">
+                    TERRY T TSAI
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
